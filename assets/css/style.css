@@ -5,17 +5,50 @@
     text-decoration: none;
 }
 
+/****** Header Styling ******/
 header{
     display: flex;
     justify-content: space-between;
     padding: 15px;
     font-size: 1.25em;
 }
-
 #view-highscore{
     font-size: 1.1em;
     background: #bb61bb;
     border-radius: 5px;
     border-width: 2px;
     padding: 3px 4px;
+    cursor: pointer;
+}
+
+/****** Main Styling ******/
+main{
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    max-width: 80%;
+}
+.title{
+    font-size: 2.5em;
+    padding: 15px;
+    text-align: center;
+}
+#pre-quiz{
+    text-align: center;
+    padding: 5px
+}
+#pre-quiz p{
+    font-size: large;
+}
+#start-quiz{
+    font-size: 1.1em;
+    background: #bb61bb;
+    border-radius: 5px;
+    border-width: 2px;
+    padding: 3px 4px;
+    cursor: pointer;
+    top: 20px;
+    position: relative;
 }
