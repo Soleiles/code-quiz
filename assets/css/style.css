@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 1.25em;
+}
+
+#view-highscore{
+    font-size: 1.1em;
+    background: #bb61bb;
+    border-radius: 5px;
+    border-width: 2px;
+    padding: 3px 4px;
+}
