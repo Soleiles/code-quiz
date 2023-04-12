@@ -20,9 +20,22 @@ function startTimer(){
     timerEl.textContent=("Time: " + time);
 
     timerInterval = setInterval( function() {
-        time--
+        time--;
         timerEl.textContent=("Time: " + time);
     }, 1000);
 }
 
-startTimer();
+
+var startBtn = document.querySelector("html");
+
+startBtn.addEventListener("click", function(event){
+    var element = event.target;
+    var state = element.getAttribute("data-state");
+
+    if (state === "stopped") {
+        element.dataset.state = "started";
+        element.setAttribute("data-state", "started");
+        startTimer();
+    }
+});
+

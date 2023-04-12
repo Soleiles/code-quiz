@@ -21,7 +21,6 @@ header{
     cursor: pointer;
 }
 
-/****** Main Styling ******/
 main{
     position: fixed;
     top: 30%;
@@ -30,6 +29,8 @@ main{
     width: 700px;
     max-width: 80%;
 }
+
+/****** Pre-Quiz Styling ******/
 .title{
     font-size: 2.5em;
     padding: 15px;
@@ -42,7 +43,7 @@ main{
 #pre-quiz p{
     font-size: large;
 }
-#start-quiz{
+#start-btn{
     font-size: 1.1em;
     background: #bb61bb;
     border-radius: 5px;
