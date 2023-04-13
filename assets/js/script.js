@@ -34,27 +34,27 @@ startBtn.addEventListener("click", function(event){
 var questions = [
 {
     question: "Placeholder Question 1",
-    answer: 2,
+    correctAnswer: 2,
     choices: ["answer 1", "answer 2", "answer 3", "answer 4"]
 },
 {
     question: "Placeholder Question 2",
-    answer: 3,
+    correctAnswer: 3,
     choices: ["answer 1", "answer 2", "answer 3", "answer 4"]
 },
 {
     question: "Placeholder Question 3",
-    answer: 1,
+    correctAnswer: 1,
     choices: ["answer 1", "answer 2", "answer 3", "answer 4"]
 },
 {
     question: "Placeholder Question 4",
-    answer: 3,
+    correctAnswer: 3,
     choices: ["answer 1", "answer 2", "answer 3", "answer 4"]
 },
 {
     question: "Placeholder Question 5",
-    answer: 4,
+    correctAnswer: 4,
     choices: ["answer 1", "answer 2", "answer 3", "answer 4"]
 }
 ];
@@ -88,6 +88,7 @@ function checkAnswer() {
 		document.getElementById("label2").style.display = "none";
 		document.getElementById("label3").style.display = "none";
         document.getElementById("label4").style.display = "none";
+        document.getElementById("inputs").style.display = "none";
 		document.getElementById("result").innerHTML = "You got " + score + " out of " + questions.length + " questions correct!";
 	}
 }
