@@ -33,29 +33,29 @@ startBtn.addEventListener("click", function(event){
 //   ****** Quiz Questions ****** 
 var questions = [
 {
-    question: "Placeholder Question 1",
-    correctAnswer: 2,
-    choices: ["answer 1", "answer 2", "answer 3", "answer 4"]
-},
-{
-    question: "Placeholder Question 2",
-    correctAnswer: 3,
-    choices: ["answer 1", "answer 2", "answer 3", "answer 4"]
-},
-{
-    question: "Placeholder Question 3",
-    correctAnswer: 1,
-    choices: ["answer 1", "answer 2", "answer 3", "answer 4"]
-},
-{
-    question: "Placeholder Question 4",
-    correctAnswer: 3,
-    choices: ["answer 1", "answer 2", "answer 3", "answer 4"]
-},
-{
-    question: "Placeholder Question 5",
+    question: "Which of the following is the correct way to write a JavaScript array?",
     correctAnswer: 4,
-    choices: ["answer 1", "answer 2", "answer 3", "answer 4"]
+    choices: ["var colors = 'red', 'green', 'blue'", "var colors = 1 = ('red'), 2 = ('green'), 3 = ('blue')", "var colors = (1:'red', 2:'green', 3:'blue'", "var colors = ['red', 'green', 'blue'"]
+},
+{
+    question: "In JavaScript, the following loop will execute ________ times. for (x=1; x<11; x++)",
+    correctAnswer: 2,
+    choices: ["9", "10", "11", "not enough information from the Script"]
+},
+{
+    question: "What kind of statement allows a block code to run only if a certain condition is true?",
+    correctAnswer: 1,
+    choices: ["if statement", "else statement", "for loop", "while loop"]
+},
+{
+    question: "What is the difference between var and const?",
+    correctAnswer: 1,
+    choices: ["var can be updated or re-declared", "const can be updated or re-declared", "const is not a declaration", "They are the same"]
+},
+{
+    question: "How would you write a conditional statement to execute only if 'i' is equal to 5?",
+    correctAnswer: 3,
+    choices: ["if i==5 then", "if i=5 then", "if (i==5)", "if i=5"]
 }
 ];
 
@@ -90,6 +90,7 @@ function checkAnswer() {
         document.getElementById("label4").style.display = "none";
         document.getElementById("inputs").style.display = "none";
 		document.getElementById("result").innerHTML = "You got " + score + " out of " + questions.length + " questions correct!";
+        document.getElementById("initials").style.display = "flex";
 	}
 }
 

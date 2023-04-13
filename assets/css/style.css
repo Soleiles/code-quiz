@@ -43,7 +43,8 @@ main{
 #pre-quiz p{
     font-size: large;
 }
-#start-btn{
+#start-btn,
+#inputs button{
     font-size: 1.1em;
     background: #bb61bb;
     border-radius: 5px;
@@ -54,6 +55,49 @@ main{
     position: relative;
 }
 
+/****** Quiz Box Styling ******/
 #quiz-questions{
     display: none;
+    flex-direction: column;
+}
+
+#question{
+    font-size: 2em;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+#label1,
+#label2,
+#label3,
+#label4{
+    padding-left: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+/****** Post Quiz Styling ******/
+#result{
+    font-size: 1.25em;
+    height: 45px;
+}
+
+#initials{
+    display: none;
+    font-size: 1.2em;
+}
+
+#initials label{
+    padding-right: 20px;
+}
+
+#initials button{
+    font-size: 1.1em;
+    background: #bb61bb;
+    border-radius: 5px;
+    border-width: 2px;
+    padding: 3px 4px;
+    cursor: pointer;
+    position: relative;
+    left: 20px;
 }
