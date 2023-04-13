@@ -18,7 +18,7 @@
     <!-- ****** Pre-Quiz Section ****** -->
         <section id="pre-quiz">
             <h1 class="title">Coding Quiz Challenge</h1>
-            <p>Welcome to this JavaScipt Coding Quiz! You will have 60 seconds to answer 5 questions related to JavaScript. Wrong answers will deduct 15 seconds from your time. Your score is determined by the time left remaining. Good luck!</p>
+            <p>Welcome to this JavaScipt Coding Quiz! You will have 60 seconds to answer 5 questions related to JavaScript. Wrong answers will deduct 15 seconds from your time. Good luck!</p>
             <button id="start-btn" data-state="stopped">Start Quiz</button>
         </section>
     <!-- ****** Quiz Questions and Multiple Choice ****** -->
@@ -32,11 +32,22 @@
                 <button onclick="checkAnswer()">Submit Answer</button>
             </article>
             <p id="result"></p>
+    <!-- ****** Results Screen ****** -->
             <form id="initials">
                 <label>Save your highscore!</label><br>
-                <input type="text" name="initials" placeholder="Initials here"><br>
-                <button>Submit</button>
+                <input type="text" id="name" name="initials" placeholder="Initials here"><br>
+                <button id="submit" onClick="window.location.reload()">Submit</button>
             </form>
+        </section>
+        <section id="scoreboard">
+            <h1 class="title">Scoreboard</h1>
+            <ul>
+                <li class="scores"></li>
+                <li class="scores"></li>
+                <li class="scores"></li>
+                <li class="scores"></li>
+                <li class="scores"></li>
+            </ul>
         </section>
     </div>
     </main>
