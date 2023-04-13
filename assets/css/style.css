@@ -53,3 +53,7 @@ main{
     top: 20px;
     position: relative;
 }
+
+#quiz-questions{
+    display: none;
+}

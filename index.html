@@ -11,16 +11,30 @@
     <!-- ****** View Highscore Button and Timer ****** -->
     <header>
         <button id="view-highscore">View Highscores</button>
-        <span id="time-left">Time: 90</span>
+        <span id="time-left">Time: 60</span>
     </header>
     <main>
+    <div id="question-boxes">
     <!-- ****** Pre-Quiz Section ****** -->
         <section id="pre-quiz">
             <h1 class="title">Coding Quiz Challenge</h1>
             <p>Welcome to this JavaScipt Coding Quiz! You will have 60 seconds to answer 5 questions related to JavaScript. Wrong answers will deduct 12 seconds from your time. Your score is determined by the time left remaining. Good luck!</p>
             <button id="start-btn" data-state="stopped">Start Quiz</button>
         </section>
+    <!-- ****** Quiz Questions and Multiple Choice ****** -->
+        <section id="quiz-questions">
+            <p id="question"></p>
+            <input type="radio" name="answer" value="1" id="answer1"><label for="answer1" id="label1"></label><br>
+	        <input type="radio" name="answer" value="2" id="answer2"><label for="answer2" id="label2"></label><br>
+	        <input type="radio" name="answer" value="3" id="answer3"><label for="answer3" id="label3"></label><br>
+            <input type="radio" name="answer" value="4" id="answer4"><label for="answer4" id="label4"></label><br>
+            <input type="radio" name="answer" value="5" id="answer5"><label for="answer3" id="label5"></label><br>
+            <button onclick="checkAnswer()">Submit Answer</button>
+            <p id="result"></p>
+        </section>
+    </div>
     </main>
+
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
