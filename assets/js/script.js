@@ -6,12 +6,16 @@ var timerInterval = 0;
 function startTimer(){
     time = 60;
     timerEl.textContent=("Time: " + time);
-
     timerInterval = setInterval( function() {
+        if (time > 0){
         time--;
         timerEl.textContent=("Time: " + time);
+        } else{
+            clearInterval(timerInterval);
+        }
     }, 1000);
 }
+
 
 // ****** Timer Starts when "Start Quiz" is clicked ******
 var startBtn = document.querySelector("html");
@@ -77,7 +81,7 @@ function checkAnswer() {
 		document.getElementById("result").innerHTML = "Correct!";
 	} else {
 		document.getElementById("result").innerHTML = "Incorrect.";
-        time = time - 12;
+        time = time - 15;
 	}
 	questionIndex++;
 	if (questionIndex < questions.length) {
@@ -95,3 +99,4 @@ function checkAnswer() {
 }
 
 displayQues();
+
